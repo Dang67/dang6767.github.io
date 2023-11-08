@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #title {
+            color: rgb(255, 255, 255);
+        }
+        .sub_item{
+            color: rgb(13, 0, 128);
+        }
+        table, th, td{
+            color: white;
+            border: 1px solid;
+            width: auto solid;
+            background-color: #241547;
+        }
+        .Presenter{
+            color: rgb(0, 255, 106);
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #E59216;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">Agenda</h1>
+    <h2 class="sub_item">New Developer Onboarding and Training Program</h2>
+    <img width="600"
+        src="data:image/jpeg;base64,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">
+    <h3 class="sub_item"><i>Day 1 (January 4, 2024) - Introduction and Company Orientation</i></h3>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Content</th>
+            <th class="Presenter">Presenter</th>
+        </tr>
+        <tr>
+            <td>9:00 AM - 9:30 AM</td>
+            <td>Welcome and company introduction</td>
+            <td class="Presenter">Tran Anh Dat</td>
+        </tr>
+        <tr>
+            <td>9:30 AM - 10:30 AM</td>
+            <td>Overview of company culture and values</td>
+            <td class="Presenter">Tran Anh Dat</td>
+        </tr>
+        <tr>
+            <td>10:30 AM - 11:00 AM</td>
+            <td>Coffee break</td>
+        </tr>
+        <tr>
+            <td>11:00 AM - 12:00 PM</td>
+            <td>IT policies and guidelines</td>
+            <td class="Presenter">Tran Anh Dat</td>
+        </tr>
+        <tr>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Lunch Break</td>
+        </tr>
+        <tr>
+            <td>1:00 PM - 3:00 PM</td>
+            <td>Introduction to the development environment (Java and Python)</td>
+            <td class="Presenter">Tran Anh Dat</td>
+        </tr>
+    </table>
+    <h3 class="sub_item"><i>Day 2 (January 5, 2024) - Java - Language and Development Tools</i></h3>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Content</th>
+            <th class="Presenter">Presenter</th>
+        </tr>
+        <tr>
+            <td>9:00 AM - 9:30 AM</td>
+            <td>Recap of Day 1</td>
+            <td class="Presenter">Tran Anh Dat</td>
+        </tr>
+        <tr>
+            <td>9:30 AM - 11:30 AM</td>
+            <td>In-depth Java training (syntax, structure, object-oriented programming)</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>11:30 AM - 12:00 PM</td>
+            <td>Break and coffee</td>
+        </tr>
+        <tr>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Using IDE for Java</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>1:00 PM - 2:00 PM</td>
+            <td>Lunch Break</td>
+        </tr>
+        <tr>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Hands-on programming exercises with Java</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+    </table>
+    <h3 class="sub_item"><i>Day 3 (January 6, 2024) - Python - Language and Development Tools</i></h3>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Content</th>
+            <th class="Presenter">Presenter</th>
+        </tr>
+        <tr>
+            <td>9:00 AM - 9:30 AM</td>
+            <td>Recap of Day 2</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>9:30 AM - 11:30 AM</td>
+            <td>In-depth Python training (syntax, structure, object-oriented programming)</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>11:30 AM - 12:00 PM</td>
+            <td>Break and coffee</td>
+        </tr>
+        <tr>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Using IDE for Python</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>1:00 PM - 2:00 PM</td>
+            <td>Lunch Break</td>
+        </tr>
+        <tr>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Hands-on programming exercises with Python</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+    </table>
+    <h3 class="sub_item"><i>Day 4 (January 7, 2024) - DevOps, Version Control, and Project Management</i></h3>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Content</th>
+            <th class="Presenter">Presenter</th>
+        </tr>
+        <tr>
+            <td>9:00 AM - 9:30 AM</td>
+            <td>Recap of Day 3</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>9:30 AM - 11:30 AM</td>
+            <td>Agile methodologies and project management</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>11:30 AM - 12:00 PM</td>
+            <td>Break and coffee</td>
+        </tr>
+        <tr>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Code quality, testing, and debugging</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>1:00 PM - 2:00 PM</td>
+            <td>Lunch Break</td>
+        </tr>
+        <tr>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Code review and collaboration tools</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>4:00 PM - 4:30 PM</td>
+            <td>Q&A session and feedback</td>
+            <td class="Presenter">Tran Anh Dat</td>
+        </tr>
+    </table>
+    <h3 class="sub_item"><i>Day 5 (January 8, 2024) - Backup</i></h3>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Content</th>
+            <th class="Presenter">Presenter</th>
+        </tr>
+        <tr>
+            <td>9:00 AM - 9:30 AM</td>
+            <td>Recap of Day 1,2,3, and 4</td>
+            <td class="Presenter">Tran Anh Dat</td>
+        </tr>
+        <tr>
+            <td>9:30 AM - 11:00 AM</td>
+            <td>Re-introduction to development environments (Java and Python)</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>11:00 AM - 12:00 PM</td>
+            <td>Lunch and coffee break</td>
+        </tr>
+        <tr>
+            <td>12:00 PM - 2:00 PM</td>
+            <td>In-depth Java training and Using IDE for Java</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+        <tr>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>In-depth Python training and Using IDE for Python</td>
+            <td class="Presenter">Pham Bao Son</td>
+        </tr>
+    </table>
+</body>
+
+</html>
